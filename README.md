@@ -1,3 +1,5 @@
 # opendiagram
 
-from https://opendiagram.codeplex.com/SourceControl/latest#Crainiate.Diagramming.Forms/Margin.cs
+from https://opendiagram.codeplex.com
+
+license: Simplified BSD License (BSD)
