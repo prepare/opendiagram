@@ -678,7 +678,28 @@ namespace Crainiate.Diagramming
             }
             else
             {
-                Cursor cursor = new Cursor(typeof(Crainiate.Diagramming.Component), resource);
+                Type tt = typeof(OpenDiagram.Diagramming.Resource);
+                PropertyInfo[] props = tt.GetProperties(BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic);
+                for (int i = props.Length - 1; i >= 0; --i)
+                {
+                    PropertyInfo p = props[i];
+                    if (tt.FullName + "." + p.Name == resource)
+                    {
+                        byte[] foundCursorBuffer = p.GetValue(null, null) as byte[];
+                        if (foundCursorBuffer != null)
+                        {
+                            using (System.IO.MemoryStream ms = new System.IO.MemoryStream(foundCursorBuffer))
+                            {
+                                Cursor found_cursor = new Cursor(ms);
+                                mResourceCursors.Add(resource, found_cursor);
+                                return found_cursor;
+                            } 
+                        }
+                    }
+                }
+                //not found
+
+                Cursor cursor = System.Windows.Forms.Cursors.Default;
                 mResourceCursors.Add(resource, cursor);
 
                 return cursor;
@@ -1015,7 +1036,7 @@ namespace Crainiate.Diagramming
             mCursors.Add(HandleType.Origin, System.Windows.Forms.Cursors.PanNorth);
             mCursors.Add(HandleType.LeftRight, System.Windows.Forms.Cursors.SizeWE);
             mCursors.Add(HandleType.UpDown, System.Windows.Forms.Cursors.SizeNS);
-            //mCursors.Add(HandleType.Rotate, LoadCursor("OpenDiagram.Diagramming.Resource.rotate"));
+            mCursors.Add(HandleType.Rotate, LoadCursor("OpenDiagram.Diagramming.Resource.rotate"));
             mCursors.Add(HandleType.Expand, System.Windows.Forms.Cursors.PanEast);
             mCursors.Add(HandleType.None, System.Windows.Forms.Cursors.Arrow);
         }
