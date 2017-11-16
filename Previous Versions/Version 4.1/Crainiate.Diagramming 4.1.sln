@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crainiate.Diagramming", "Crainiate.Diagramming\Crainiate.Diagramming.csproj", "{DC0FF857-D4D8-4676-9F59-BDA616EBAECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class Diagram", "Examples\C#\Class Diagram\Class Diagram.csproj", "{7BB081D6-F296-42B8-97C3-46C30D4269FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Editor Example", "Examples\C#\Editor Example\Editor Example.csproj", "{0782B1BF-6989-4DD5-8921-B1FF62214FE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flowchart Example", "Examples\C#\Flowchart Example\Flowchart Example.csproj", "{E44D7DD8-71DB-4B91-8BBA-A0863E1EE12D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Network Diagram", "Examples\C#\Network Diagram\Network Diagram.csproj", "{36EFD449-593C-4679-B4D1-30E2B1748512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales Process Diagram", "Examples\C#\Sales Process Diagram\Sales Process Diagram.csproj", "{96A711FB-02BD-44C8-B6E5-F5F62A99A84D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC0FF857-D4D8-4676-9F59-BDA616EBAECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC0FF857-D4D8-4676-9F59-BDA616EBAECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC0FF857-D4D8-4676-9F59-BDA616EBAECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC0FF857-D4D8-4676-9F59-BDA616EBAECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB081D6-F296-42B8-97C3-46C30D4269FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB081D6-F296-42B8-97C3-46C30D4269FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB081D6-F296-42B8-97C3-46C30D4269FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB081D6-F296-42B8-97C3-46C30D4269FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0782B1BF-6989-4DD5-8921-B1FF62214FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0782B1BF-6989-4DD5-8921-B1FF62214FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0782B1BF-6989-4DD5-8921-B1FF62214FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0782B1BF-6989-4DD5-8921-B1FF62214FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E44D7DD8-71DB-4B91-8BBA-A0863E1EE12D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E44D7DD8-71DB-4B91-8BBA-A0863E1EE12D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E44D7DD8-71DB-4B91-8BBA-A0863E1EE12D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E44D7DD8-71DB-4B91-8BBA-A0863E1EE12D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36EFD449-593C-4679-B4D1-30E2B1748512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36EFD449-593C-4679-B4D1-30E2B1748512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36EFD449-593C-4679-B4D1-30E2B1748512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36EFD449-593C-4679-B4D1-30E2B1748512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A711FB-02BD-44C8-B6E5-F5F62A99A84D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A711FB-02BD-44C8-B6E5-F5F62A99A84D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A711FB-02BD-44C8-B6E5-F5F62A99A84D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A711FB-02BD-44C8-B6E5-F5F62A99A84D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

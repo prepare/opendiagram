@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53B5E1D2-537D-434F-AC1A-57CF64AE6FCA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Crainiate.Diagramming.Web</RootNamespace>
+    <AssemblyName>Crainiate.Diagramming.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Crainiate.Diagramming.Web.Svg\%28Exceptions%29.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\ComplexFormatter.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\Curvedline.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\CurveFormatter.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\Definition.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\Formatter.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\ImageRef.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\LineFormatter.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\Marker.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\Polyline.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\PortFormatter.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\ShapeFormatter.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\SolidFormatter.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\Style.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\SvgDocument.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\TableFormatter.cs" />
+    <Compile Include="Crainiate.Diagramming.Web.Svg\Text.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Crainiate.Diagramming\Crainiate.Diagramming.csproj">
+      <Project>{8FEEDDA0-185D-4F31-9920-503C014F5526}</Project>
+      <Name>Crainiate.Diagramming</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="%28Licence%29.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

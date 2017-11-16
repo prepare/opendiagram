@@ -1,0 +1,178 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BEC2C1F0-A91E-40EE-90D8-49C8C525A5DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Crainiate.Diagramming.Testing.Forms</RootNamespace>
+    <AssemblyName>Crainiate.Diagramming.Testing.Forms</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmPrintPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintPreview.Designer.cs">
+      <DependentUpon>frmPrintPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTable.Designer.cs">
+      <DependentUpon>frmTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLink.Designer.cs">
+      <DependentUpon>frmLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPalette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPalette.Designer.cs">
+      <DependentUpon>frmPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTreeLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTreeLine.Designer.cs">
+      <DependentUpon>frmTreeLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPath.Designer.cs">
+      <DependentUpon>frmPath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBlockLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBlockLine.Designer.cs">
+      <DependentUpon>frmBlockLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnector.Designer.cs">
+      <DependentUpon>frmConnector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroup.Designer.cs">
+      <DependentUpon>frmGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmPrintPreview.resx">
+      <DependentUpon>frmPrintPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTable.resx">
+      <DependentUpon>frmTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLink.resx">
+      <DependentUpon>frmLink.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPalette.resx">
+      <DependentUpon>frmPalette.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTreeLine.resx">
+      <DependentUpon>frmTreeLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPath.resx">
+      <DependentUpon>frmPath.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBlockLine.resx">
+      <DependentUpon>frmBlockLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnector.resx">
+      <DependentUpon>frmConnector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Crainiate.Diagramming.Forms\Crainiate.Diagramming.Forms.csproj">
+      <Project>{86FBCBDA-52FD-4111-99F0-F6EBCC00AB06}</Project>
+      <Name>Crainiate.Diagramming.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Crainiate.Diagramming\Crainiate.Diagramming.csproj">
+      <Project>{8FEEDDA0-185D-4F31-9920-503C014F5526}</Project>
+      <Name>Crainiate.Diagramming</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
