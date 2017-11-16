@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D1B80FF-B899-40D7-BAD7-6E320FE11693}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenDiagram.Diagramming</RootNamespace>
+    <AssemblyName>OpenDiagram.Diagramming</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation.cs" />
+    <Compile Include="Animator.cs" />
+    <Compile Include="Arrow.cs" />
+    <Compile Include="ArrowStencil.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BasicStencil.cs" />
+    <Compile Include="Comparers.cs" />
+    <Compile Include="ComplexLine.cs" />
+    <Compile Include="ComplexShape.cs" />
+    <Compile Include="Component.cs" />
+    <Compile Include="Connector.cs" />
+    <Compile Include="Curve.cs" />
+    <Compile Include="Diagram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiagramBinder.cs" />
+    <Compile Include="DiagramSerialize.cs" />
+    <Compile Include="Element.cs" />
+    <Compile Include="Elements.cs" />
+    <Compile Include="Enumerations.cs" />
+    <Compile Include="EventArgs.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Flowchart.cs" />
+    <Compile Include="FlowchartSerialize.cs" />
+    <Compile Include="FlowchartStencil.cs" />
+    <Compile Include="Geometry.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="Handles.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="Interfaces.cs" />
+    <Compile Include="Label.cs" />
+    <Compile Include="LabelEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layer.cs" />
+    <Compile Include="LayerElements.cs" />
+    <Compile Include="Layers.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="Link.cs" />
+    <Compile Include="Margin.cs" />
+    <Compile Include="Marker.cs" />
+    <Compile Include="MarkerBase.cs" />
+    <Compile Include="Metafile.cs" />
+    <Compile Include="Model.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelSerialize.cs" />
+    <Compile Include="Navigate.cs" />
+    <Compile Include="Open.Diagramming.Layouts\BinaryGrid.cs" />
+    <Compile Include="Open.Diagramming.Layouts\BinaryHeap.cs" />
+    <Compile Include="Open.Diagramming.Layouts\Comparers.cs" />
+    <Compile Include="Open.Diagramming.Layouts\Exceptions.cs" />
+    <Compile Include="Open.Diagramming.Layouts\GridNode.cs" />
+    <Compile Include="Open.Diagramming.Layouts\Route.cs" />
+    <Compile Include="Open.Diagramming.Layouts\RouteNode.cs" />
+    <Compile Include="Open.Diagramming.Layouts\TerrainNode.cs" />
+    <Compile Include="Open.Diagramming.Svg\ComplexFormatter.cs" />
+    <Compile Include="Open.Diagramming.Svg\ComplexLineFormatter.cs" />
+    <Compile Include="Open.Diagramming.Svg\Curvedline.cs" />
+    <Compile Include="Open.Diagramming.Svg\CurveFormatter.cs" />
+    <Compile Include="Open.Diagramming.Svg\Definition.cs" />
+    <Compile Include="Open.Diagramming.Svg\Exceptions.cs" />
+    <Compile Include="Open.Diagramming.Svg\Formatter.cs" />
+    <Compile Include="Open.Diagramming.Svg\ImageRef.cs" />
+    <Compile Include="Open.Diagramming.Svg\LineFormatter.cs" />
+    <Compile Include="Open.Diagramming.Svg\LinkFormatter.cs" />
+    <Compile Include="Open.Diagramming.Svg\Marker.cs" />
+    <Compile Include="Open.Diagramming.Svg\Polyline.cs" />
+    <Compile Include="Open.Diagramming.Svg\PortFormatter.cs" />
+    <Compile Include="Open.Diagramming.Svg\ShapeFormatter.cs" />
+    <Compile Include="Open.Diagramming.Svg\SolidFormatter.cs" />
+    <Compile Include="Open.Diagramming.Svg\Style.cs" />
+    <Compile Include="Open.Diagramming.Svg\SvgDocument.cs" />
+    <Compile Include="Open.Diagramming.Svg\TableFormatter.cs" />
+    <Compile Include="Open.Diagramming.Svg\Text.cs" />
+    <Compile Include="Origin.cs" />
+    <Compile Include="Overview.cs" />
+    <Compile Include="OverviewRender.cs" />
+    <Compile Include="Palette.cs" />
+    <Compile Include="PaletteRender.cs" />
+    <Compile Include="Port.cs" />
+    <Compile Include="PrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintRender.cs" />
+    <Compile Include="Render.cs" />
+    <Compile Include="RenderList.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Ruler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Runtime.cs" />
+    <Compile Include="Segment.cs" />
+    <Compile Include="Segments.cs" />
+    <Compile Include="Serialize.cs" />
+    <Compile Include="Shape.cs" />
+    <Compile Include="SolidElement.cs" />
+    <Compile Include="Stencil.cs" />
+    <Compile Include="StencilItem.cs" />
+    <Compile Include="Tab.cs" />
+    <Compile Include="Table.cs" />
+    <Compile Include="TableGroup.cs" />
+    <Compile Include="TableItem.cs" />
+    <Compile Include="TableItems.cs" />
+    <Compile Include="TableRow.cs" />
+    <Compile Include="Tabs.cs" />
+    <Compile Include="TextLabel.cs" />
+    <Compile Include="UndoList.cs" />
+    <Compile Include="UndoPoint.cs" />
+    <Compile Include="Units.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Diagram.resx">
+      <DependentUpon>Diagram.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flowchart.resx">
+      <DependentUpon>Flowchart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabelEdit.resx">
+      <DependentUpon>LabelEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.resx">
+      <DependentUpon>Model.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Palette.resx">
+      <DependentUpon>Palette.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDocument.resx">
+      <DependentUpon>PrintDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource2\diagram.bmp" />
+    <EmbeddedResource Include="Ruler.resx">
+      <DependentUpon>Ruler.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\flowchart.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\internalfield.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\internalmethod.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\internalproperty.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\model.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\overview.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\palette.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\privatefield.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\privatemethod.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\privateproperty.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\protectedfield.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\protectedmethod.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\protectedproperty.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\publicfield.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\publicmethod.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\publicproperty.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\rotate.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource2\ruler.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

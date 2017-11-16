@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FDE396BE-C333-408B-951F-DAA37FB1B0F3}</ProjectGuid>
+    <ProjectGuid>{DC0FF857-D4D8-4676-9F59-BDA616EBAECC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OpenDiagram.Diagramming</RootNamespace>
