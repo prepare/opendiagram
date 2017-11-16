@@ -40,7 +40,6 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -76,9 +75,7 @@
     <Compile Include="LabelEdit.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Crainiate.Diagramming.Flowcharting\Flowchart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Crainiate.Diagramming.Flowcharting\Flowchart.cs" />
     <Compile Include="Crainiate.Diagramming.Forms.Rendering\LinkRender.cs" />
     <Compile Include="Crainiate.Diagramming.Forms.Rendering\ShapeRender.cs" />
     <Compile Include="Crainiate.Diagramming.Printing\%28Exceptions%29.cs" />
@@ -165,9 +162,9 @@
     <Content Include="%28Licence%29.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Crainiate.Diagramming\Crainiate.Diagramming.csproj">
-      <Project>{8FEEDDA0-185D-4F31-9920-503C014F5526}</Project>
-      <Name>Crainiate.Diagramming</Name>
+    <ProjectReference Include="..\OpenDiagram.Diagramming\OpenDiagram.Diagramming.csproj">
+      <Project>{fde396be-c333-408b-951f-daa37fb1b0f3}</Project>
+      <Name>OpenDiagram.Diagramming</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

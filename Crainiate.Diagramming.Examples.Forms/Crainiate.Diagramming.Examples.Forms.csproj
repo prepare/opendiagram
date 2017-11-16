@@ -40,7 +40,6 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -108,9 +107,9 @@
       <Project>{86FBCBDA-52FD-4111-99F0-F6EBCC00AB06}</Project>
       <Name>Crainiate.Diagramming.Forms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Crainiate.Diagramming\Crainiate.Diagramming.csproj">
-      <Project>{8FEEDDA0-185D-4F31-9920-503C014F5526}</Project>
-      <Name>Crainiate.Diagramming</Name>
+    <ProjectReference Include="..\OpenDiagram.Diagramming\OpenDiagram.Diagramming.csproj">
+      <Project>{fde396be-c333-408b-951f-daa37fb1b0f3}</Project>
+      <Name>OpenDiagram.Diagramming</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

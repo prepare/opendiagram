@@ -16,7 +16,7 @@ namespace Crainiate.Diagramming.Testing
             Application.SetCompatibleTextRenderingDefault(false);
             
             //Application.Run(new frmBlockLine());
-            //Application.Run(new frmConnector());
+           // Application.Run(new frmConnector());
             //Application.Run(new frmGroup());
             //Application.Run(new frmLink());
             //Application.Run(new frmPalette());
