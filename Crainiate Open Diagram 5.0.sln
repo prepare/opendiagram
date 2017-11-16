@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crainiate.Diagramming", "Crainiate.Diagramming\Crainiate.Diagramming.csproj", "{8FEEDDA0-185D-4F31-9920-503C014F5526}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crainiate.Diagramming.Testing.Forms", "Crainiate.Diagramming.Testing.Forms\Crainiate.Diagramming.Testing.Forms.csproj", "{BEC2C1F0-A91E-40EE-90D8-49C8C525A5DF}"
@@ -49,5 +51,6 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {09E5D11F-7EFC-43F7-9C69-9D9E75FE3B65}
 	EndGlobalSection
 EndGlobal
