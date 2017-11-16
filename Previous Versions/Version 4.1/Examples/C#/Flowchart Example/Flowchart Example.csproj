@@ -26,7 +26,8 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -104,9 +105,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Open.Diagramming\Crainiate.Diagramming.csproj">
-      <Project>{DC0FF857-D4D8-4676-9F59-BDA616EBAECC}</Project>
-      <Name>Crainiate.Diagramming</Name>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\OpenDiagram.Diagramming\OpenDiagram.Diagramming.csproj">
+      <Project>{2d1b80ff-b899-40d7-bad7-6e320fe11693}</Project>
+      <Name>OpenDiagram.Diagramming</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
